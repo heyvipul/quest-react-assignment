@@ -13,7 +13,7 @@ const Column = ({title,tasks,id}) => {
         <span>...</span>
     </div>
 
-    <Droppable droppableId={id}>
+    <Droppable droppableId={id?.toString() || ""}>
         {(provided,snapshot) => (
             <div className='taskList' 
             ref={provided.innerRef}

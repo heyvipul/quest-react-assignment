@@ -3,7 +3,7 @@ import { Draggable } from "react-beautiful-dnd";
 
 const Card = ({task, index}) => {
   return (
-    <Draggable draggableId={task.id} index={index}>
+    <Draggable draggableId={task?.id?.toString() || ""} index={index}>
       {(provided, snapshot) => (
         <div className='cards'
           ref={provided.innerRef}
