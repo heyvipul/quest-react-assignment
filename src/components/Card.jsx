@@ -5,14 +5,16 @@ const Card = ({task, index}) => {
   return (
     <Draggable draggableId={task.id} index={index}>
       {(provided, snapshot) => (
-        <div
+        <div className='cards'
           ref={provided.innerRef}
           {...provided.draggableProps}
           {...provided.dragHandleProps}
           isDragging={snapshot.isDragging}
         >
           {/* Your card content here */}
-          {task.title}
+          <p className='bar'></p>
+          <h3>{task.title}</h3>
+          <p>staus: {task.completed ? "not-completed" : "in-progress"}</p>
           {provided.placeholder}
         </div>
       )}

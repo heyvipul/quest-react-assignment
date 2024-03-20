@@ -79,16 +79,18 @@ const Board = () => {
 
   return (
     <DragDropContext onDragEnd={handleDragEnd} >
-    <h2 style={{ textAlign: "center" }}>KANBAN BOARD</h2>
+    {/* <h2 style={{ textAlign: "center" }}>KANBAN BOARD</h2> */}
         <div style={{
             display : "flex",
             justifyContent: "space-between",
             alignItems: "center",
             flexDirection: "row",
-            width: "1100px",
+            width: "1300px",
             margin: "0 auto",
-            border : "1px solid red",
+            padding : "10px",
             gap : "10px",
+            backgroundColor : "rgb(48,120,186)",
+            marginTop : "20px"
         }}>
             <Column title={"TO DO"} tasks={todo} id={"1"} />
             <Column title={"IN PROGRESS"} tasks={progress} id={"2"}/>

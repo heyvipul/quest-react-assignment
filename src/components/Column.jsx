@@ -8,7 +8,10 @@ const Column = ({title,tasks,id}) => {
 
   return (
     <div className='container'>
-    <h3 className='title'>{title}</h3>
+    <div className='title-div'>
+        <h3 className='title'>{title}</h3>
+        <span>...</span>
+    </div>
 
     <Droppable droppableId={id}>
         {(provided,snapshot) => (
@@ -26,6 +29,10 @@ const Column = ({title,tasks,id}) => {
         )}
 
     </Droppable>
+        <div className='add-card'>
+            <span>+</span>
+            <p>Add a card</p>
+        </div>
     </div>
   )
 }
