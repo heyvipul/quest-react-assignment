@@ -17,53 +17,55 @@ const Board = () => {
     },[])
 
     console.log(todo);
-    console.log(progress);
+    console.log(done);
 
-    const handleDragEnd = (result) =>{
+    const handleDragEnd = (result) => {
         const { destination, source, draggableId } = result;
-
+    
         if (!destination || source.droppableId === destination.droppableId) return;
-
-        deletePreviousState(source.droppableId);
-
-        const task = findItemById(draggableId,[...todo,...progress,...review,...done])
-        setNewState(destination.droppableId,task)
+    
+        const task = findItemById(draggableId, [...todo, ...progress, ...review, ...done]);
+        setNewState(destination.droppableId, task);
+        deletePreviousState(source.droppableId, draggableId);
     }
-
+    
     function deletePreviousState(sourceDroppableId, taskId) {
-        switch(sourceDroppableId){
-            case "1" :
-                setTodo(removeItemById(taskId,todo));
+        switch (sourceDroppableId) {
+            case "1":
+                setTodo(removeItemById(taskId, todo));
                 break;
-            case "2" :
-                setProgress(removeItemById(taskId,progress));
+            case "2":
+                setProgress(removeItemById(taskId, progress));
                 break;
-            case "3" : 
-                setReview(removeItemById(taskId,review));
+            case "3":
+                setReview(removeItemById(taskId, review));
                 break;
-            case "4" : 
-                setDone(removeItemById(taskId,done))    
+            case "4":
+                setDone(removeItemById(taskId, done));
+                break;
+            default:
+                break;
         }
-
     }
+    
 
     function setNewState(destinationDroppableId,task){
         let updatedTask;
         switch (destinationDroppableId){
             case "1" : //TODO
-                updatedTask = {...task,completed:false};
+                updatedTask = { ...task, completed: false, status: "not-completed"};
                 setTodo([updatedTask,...todo]);
                 break;
             case "2" : // PROGRESS
-                updatedTask = {...task,completed:false};
+                updatedTask = { ...task, completed: false, status: "in-progress" };
                 setProgress([updatedTask,...progress]);
                 break;
             case "3" : //REVIEW
-                updatedTask = {...task,completed:true};
+                updatedTask = { ...task, completed: false, status: "in-review" };
                 setReview([updatedTask,...review]);
                 break;
             case "4" : //DONE
-                updatedTask = {...task,completed:true};
+                updatedTask = { ...task, completed: false, status: "done"};
                 setDone([updatedTask,...done]);
                 break;
         }
