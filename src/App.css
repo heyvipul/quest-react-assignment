@@ -64,3 +64,20 @@
   border-radius: 20px;
   margin-bottom: 5px;
 }
+.icons{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: grey;
+}
+.bars{
+  width: 20px;
+  color: grey;
+  margin-top: 5px;
+}
+.comment{
+  width: 20px;
+  color: grey;
+  margin-top: 5px;
+  margin-left: 10px;
+}
