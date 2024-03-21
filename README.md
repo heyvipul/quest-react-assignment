@@ -2,7 +2,8 @@
 
 <p id="description">Introducing our Kanban Todo Board built with React! This interface empowers users to efficiently manage their tasks with simple drag-and-drop functionality. With our Kanban board users can easily visualize their workflow moving tasks seamlessly from one stage to another as progress is made.</p>
 
-![image](https://github.com/heyvipul/quest-react-assignment/assets/131906819/8a363884-9a20-4358-bef6-4d75db04ca37)
+![image](https://github.com/heyvipul/quest-react-assignment/assets/131906819/4a56b227-3fc3-4f1e-844e-5e33b8d1ed3b)
+
 
 
 <h2>🚀 Demo</h2>
