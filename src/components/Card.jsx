@@ -32,7 +32,7 @@ const Card = ({task, index}) => {
 
 
           <h3>{task.title}</h3>
-          <p>staus: {task.status ? task.status : task.completed ? "not-completed" : "in-progress"}</p>
+          <p>status: {task.status ? task.status : task.completed ? "not-completed" : "in-progress"}</p>
 
           <div className='icons'>
             <svg className='bars' xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
@@ -43,7 +43,6 @@ const Card = ({task, index}) => {
            </svg>
            {"2"}
           </div>
-
           
           {provided.placeholder}
         </div>

@@ -94,10 +94,10 @@ const Board = () => {
             backgroundColor : "rgb(48,120,186)",
             marginTop : "20px"
         }}>
-            <Column title={"TO DO"} tasks={todo} id={"1"} />
-            <Column title={"IN PROGRESS"} tasks={progress} id={"2"}/>
-            <Column title={"REVIEW"} tasks={review} id={"3"} />
-            <Column title={"DONE"} tasks={done} id={"4"}/>
+            <Column title={"TO DO"} setTasks={setTodo} tasks={todo} id={"1"} />
+            <Column title={"IN PROGRESS"} setTask={setProgress} tasks={progress} id={"2"}/>
+            <Column title={"REVIEW"} setTasks={setReview} tasks={review} id={"3"} />
+            <Column title={"DONE"} setTasks={setDone} tasks={done} id={"4"}/>
         </div>
     </DragDropContext>
   )

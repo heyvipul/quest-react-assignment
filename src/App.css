@@ -8,7 +8,6 @@
 }
 
 /* column css */
-
 .container{
   margin-top: 20px;
   background-color: #f4f5f7;
@@ -80,4 +79,37 @@
   color: grey;
   margin-top: 5px;
   margin-left: 10px;
+}
+.popop{
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 320px;
+  height: 400px;
+  padding: 25px 0;
+  background: white;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  /* display: none; */
+}
+.popop > label{
+  font-size: 20px;
+}
+.popop > input{
+  width: 240px;
+  padding: 5px;
+  font-size: 15px;
+}
+.popop > button{
+   cursor: pointer;
+   width: 100px;
+   font-size: 15px;
+   color: white;
+   background: rgb(48,120,186);
+   border: none;
+   padding: 3px;
 }
