@@ -18,9 +18,6 @@ const Card = ({task, index}) => {
         }
     };
 
-    console.log(task.status);
-    console.log(task.completed);
-
   return (
     <Draggable draggableId={task?.id?.toString() || ""} index={index}>
       {(provided, snapshot) => (

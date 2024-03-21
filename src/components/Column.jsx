@@ -5,7 +5,6 @@ import Card from './Card';
 const Column = ({title,tasks,id}) => {
 
 
-
   return (
     <div className='container'>
     <div className='title-div'>
@@ -31,7 +30,7 @@ const Column = ({title,tasks,id}) => {
     </Droppable>
         <div className='add-card'>
             <span>+</span>
-            <p>Add a card</p>
+            <p onClick={()=>console.log(id)}>Add a card</p>
         </div>
     </div>
   )
