@@ -2,17 +2,20 @@
 
 <p id="description">Introducing our Kanban Todo Board built with React! This interface empowers users to efficiently manage their tasks with simple drag-and-drop functionality. With our Kanban board users can easily visualize their workflow moving tasks seamlessly from one stage to another as progress is made.</p>
 
-![image](https://github.com/heyvipul/quest-react-assignment/assets/131906819/4a56b227-3fc3-4f1e-844e-5e33b8d1ed3b)
+![image](https://github.com/heyvipul/quest-react-assignment/assets/131906819/11d54c8c-8fd8-45d5-a6d4-e87060cb4745)
 
 
 
 <h2>🚀 Demo</h2>
 
-[https://drive.google.com/file/d/1xcgE8DjPzlndtoNS4kz0AZVrdXVzHUlE/view?usp=sharing](https://drive.google.com/file/d/1xcgE8DjPzlndtoNS4kz0AZVrdXVzHUlE/view?usp=sharing)
+https://drive.google.com/file/d/1qv2UImzMzYyqhP2RXmw5Ik4sW68QSlwD/view?usp=sharing
 
 <img src="https://github.com/heyvipul/quest-react-assignment/assets/131906819/e320883a-de09-4980-930f-aaadce201c38" alt="project-screenshot" width="550" height="350/">
 
 <img src="https://github.com/heyvipul/quest-react-assignment/assets/131906819/d8a6df9a-c656-4815-bcec-8449abab8146" alt="project-screenshot" width="550" height="350/">
+
+<img src="https://github.com/heyvipul/quest-react-assignment/assets/131906819/0f8074b4-64a7-4f05-86ed-da5cef6441dc" alt="project-screenshot" width="550" height="350/">
+
   
   
 <h2>🧐 Features</h2>
