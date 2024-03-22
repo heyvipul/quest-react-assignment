@@ -14,8 +14,7 @@ https://drive.google.com/file/d/1qv2UImzMzYyqhP2RXmw5Ik4sW68QSlwD/view?usp=shari
 
 <img src="https://github.com/heyvipul/quest-react-assignment/assets/131906819/d8a6df9a-c656-4815-bcec-8449abab8146" alt="project-screenshot" width="550" height="350/">
 
-<img src="https://github.com/heyvipul/quest-react-assignment/assets/131906819/0f8074b4-64a7-4f05-86ed-da5cef6441dc" alt="project-screenshot" width="550" height="350/">
-
+<img src="https://github.com/heyvipul/quest-react-assignment/assets/131906819/603e5b2d-ff63-4f53-a189-23f5c11bf32f" alt="project-screenshot" width="550" height="350/">
   
   
 <h2>🧐 Features</h2>
