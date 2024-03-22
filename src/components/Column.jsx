@@ -54,6 +54,8 @@ const Column = ({title,tasks,id,setTasks}) => {
         </div>
         {
             showPopup && (
+                <React.Fragment>
+                <div className='backdrop' onClick={togglePopup}></div>
                 <form onSubmit={addCard} className='popop'>
                     <label>Title:</label>
                     <input type="text" 
@@ -68,6 +70,7 @@ const Column = ({title,tasks,id,setTasks}) => {
                     <button>submit</button>
                     <span style={{cursor : "pointer",marginTop:"10px"}} onClick={togglePopup}>clear</span>
                 </form>
+                </React.Fragment>
             )
         }
     </div>
